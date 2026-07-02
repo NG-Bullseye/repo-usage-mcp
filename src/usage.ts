@@ -101,6 +101,7 @@ function bump(map: Map<string, UsageRow>, key: string, usage: any): void {
   }
   row.messages += 1;
   addUsage(row, usage);
+  row.total = totalOf(row);
 }
 
 /**
