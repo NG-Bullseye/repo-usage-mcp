@@ -2,7 +2,7 @@
 
 Read-only MCP server that traces **Claude Code** token usage **per repository**.
 
-Reads `~/.claude/projects/*.jsonl` (the session logs Claude Code already writes),
+Reads `~/.claude/projects/<project>/*.jsonl` (the session logs Claude Code already writes),
 keeps only Claude-Code-mode messages (DeepSeek and `<synthetic>` are
 **excluded** — Leo's hard constraint, enforced by a tested `isClaudeModel()`
 function), and reports the **four token dimensions separately**:
